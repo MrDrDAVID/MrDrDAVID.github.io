@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>David Garza</title>
+    <script src="https://kit.fontawesome.com/6b4efe3afa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <div class="">
+        <div class="">
+        <div class="nav navbar-expand-lg justify-content-center bg-dark shadow-lg">
+            <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#me" class="nav-link text-white">David Garza</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link text-white">Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link text-white">Projects</a></li>
+            </ul>
+            </header>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-white">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1" id="me">David Edward Garza</h1>
+                <p class="lead">A CSULB graduate, majoring in computer science seeking full-time Software Developer position
+                    to apply my skills, solve new and interesting problems, and expand my knowledge within the field.</p>
+                <div class="d-grid gap-5 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <a href="https://github.com/MrDrDAVID" target="blank_"><i class="fab fa-github-square fa-6x icon"></i></a>
+                    <a href="https://www.linkedin.com/in/mrdrdavid/" target="blank_"><i class="fab fa-linkedin fa-6x icon"></i></a>
+                    <a href="https://www.linkedin.com/in/mrdrdavid/" target="blank_"><i class="fas fa-download fa-5x icon"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3" src="{{url_for('static', filename='1622236222667 (2).jpg')}}" alt="CSULB-grad" width="450">
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="bg-dark">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{url_for('static', filename='csulb-white.png')}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-white" id="education">California State University, Long Beach</h1>
+            <p class="lead text-white">Bachelor of Science in Computer Science<br>Graduated in December 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h1 class="display-4 fw-bold lh-1 border-bottom" id="projects">Projects</h1>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div>
+              <h2>Lovemo</h2>
+              <p>A solo project that is inspired by Venmo. It is a web application that was implemented 
+                with the Django web framework and SQLite database. Lovemo is targeted towards 
+                couples/people in relationships. It provides a way for these couples to send each other 
+                lovies (not real currency) to show how much they appreciate each other. </p>
+              <a href="https://github.com/MrDrDAVID/Lovemo" class="btn btn-primary" target="blank_">
+                Lovemo Repository
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <h2>Handraze</h2>
+              <p>Worked with a team of 5 to develop a web application that allowed students and 
+                teachers to manage courses and coursework. As well as provide an environment for the 
+                students and teachers to communicate with each other. Implemented the MERN stack 
+                to build Handraze from the ground up.</p>
+              <a href="https://github.com/ganbaKotori/handraze-web-app" class="btn btn-primary" target="blank_">
+                Handraze Repository
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <h2>Resumate</h2>
+              <p>Worked with a group of three to complete this hackathon project (LA Hacks). Resumate generates 
+                  a resume for the user based on the skills and education they provided along with the job they 
+                  are trying to get. It was developed using python and the flask web framework for the backend, and react for the 
+                  frontend.
+              </p>
+              <a href="https://github.com/ganbaKotori/resumate" class="btn btn-primary" target="blank_">
+                Resumate Repository
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="page-footer py-3 my-4 bg-dark footer-copyright" style="position: absolute; width: 100%;">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><p class="nav-item px-2 text-white">Thank you for taking the time to view this site. I appreciate the 
+            opportunity to show off my work.
+        </p></li>
+        </ul>
+        <p class="text-center text-muted">© 2021: David Garza</p>
+    </footer>
+    
+</body>
+</html>
